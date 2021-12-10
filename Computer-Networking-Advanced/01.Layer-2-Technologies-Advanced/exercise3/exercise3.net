@@ -1,0 +1,54 @@
+autostart = False
+version = 7.1.59
+[vbox 127.0.0.1:16600]
+    workingdir = None
+    udp = 20000
+    [[S5820V2-54QS-GE SW-1]]
+        image = C:\Program Files (x86)\HCL
+        device_id = 1
+        bridge_mac = 3a-97-57-e7-01-00
+        slot0 = S5800
+        XGE_0/49 = SW-2 XGE_0/49
+        XGE_0/50 = SW-2 XGE_0/50
+        x = -486.0
+        y = -396.0
+        z = 5.0
+    [[S5820V2-54QS-GE SW-2]]
+        image = C:\Program Files (x86)\HCL
+        device_id = 2
+        bridge_mac = 3a-97-59-c1-02-00
+        slot0 = S5800
+        XGE_0/49 = SW-1 XGE_0/49
+        XGE_0/50 = SW-1 XGE_0/50
+        x = -154.0
+        y = -395.0
+        z = 5.0
+[GNS3-DATA]
+    [[NOTE 1]]
+        text = "XGE_0/50"
+        x = -103.014878725
+        y = -7.12050406211
+        interface = SW-2 XGE_0/50
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 2]]
+        text = "XGE_0/49"
+        x = -100.999818553
+        y = 24.8795186188
+        interface = SW-2 XGE_0/49
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 3]]
+        text = "XGE_0/50"
+        x = 59.9847583799
+        y = -7.87954129975
+        interface = SW-1 XGE_0/50
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 4]]
+        text = "XGE_0/49"
+        x = 64.9998185525
+        y = 25.1204813812
+        interface = SW-1 XGE_0/49
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0

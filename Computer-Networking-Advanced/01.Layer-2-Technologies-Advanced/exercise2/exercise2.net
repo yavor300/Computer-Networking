@@ -1,0 +1,78 @@
+autostart = False
+version = 7.1.59
+[vbox 127.0.0.1:16600]
+    workingdir = None
+    udp = 20000
+    [[S5820V2-54QS-GE SW-1]]
+        image = C:\Program Files (x86)\HCL
+        device_id = 1
+        bridge_mac = 3a-7a-70-b4-01-00
+        slot0 = S5800
+        GE_0/1 = SW-3 GE_0/1
+        GE_0/2 = SW-2 GE_0/2
+        x = -404.0
+        y = -341.0
+        z = 5.0
+    [[S5820V2-54QS-GE SW-3]]
+        image = C:\Program Files (x86)\HCL
+        device_id = 3
+        bridge_mac = 3a-7a-79-43-03-00
+        slot0 = S5800
+        GE_0/1 = SW-1 GE_0/1
+        GE_0/2 = SW-2 GE_0/1
+        x = -196.0
+        y = -111.0
+        z = 5.0
+    [[S5820V2-54QS-GE SW-2]]
+        image = C:\Program Files (x86)\HCL
+        device_id = 2
+        bridge_mac = 3a-7a-75-74-02-00
+        slot0 = S5800
+        GE_0/1 = SW-3 GE_0/2
+        GE_0/2 = SW-1 GE_0/2
+        x = -17.0
+        y = -342.0
+        z = 5.0
+[GNS3-DATA]
+    [[NOTE 1]]
+        text = "GE_0/2"
+        x = 79.5007287156
+        y = -32.0
+        interface = SW-3 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 2]]
+        text = "GE_0/1"
+        x = -96.8297772115
+        y = -27.0
+        interface = SW-3 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 3]]
+        text = "GE_0/2"
+        x = -79.9998664617
+        y = 25.1033588281
+        interface = SW-2 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 4]]
+        text = "GE_0/1"
+        x = -25.5007287156
+        y = 88.6182588453
+        interface = SW-2 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 5]]
+        text = "GE_0/2"
+        x = 64.9998664617
+        y = 24.8966411719
+        interface = SW-1 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 6]]
+        text = "GE_0/1"
+        x = 15.8297772115
+        y = 81.6675421089
+        interface = SW-1 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        z = 6.0
